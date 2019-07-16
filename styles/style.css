@@ -1,0 +1,324 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serief;
+	overflow-x: hidden;
+}
+*{
+	box-sizing: border-box;
+}
+.container{
+	/*padding: 50px;*/
+	margin: 0 auto;
+	max-width: 1280px;
+}
+.main_content{
+	margin: 0 auto;
+	text-align: center;
+	background: url('../images/bg.jpg') no-repeat 0 0;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+	padding: 300px 0 100px;
+}
+.main_content h1, .main_content h2{
+	margin: 0;
+}
+.main_content p{
+	color: rgba(255,255,255,0.5);
+	margin: 0;
+}
+.main_content button{
+	background-color: #133953;
+	color: #fff;
+	font-size: 12px;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 50px;
+	outline: none;
+	transition: all 0.3s linear;
+}
+.main_content button:hover{
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.5);
+}
+.main_content > span{
+	background-color: rgba(19,57,83,0.5);
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 0;
+	display: block;
+	width: 110px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	position: relative;
+}
+.main_content > span::before,
+.main_content > span::after {
+  content: "";
+  position: absolute;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  left: 0;
+}
+.main_content > span::before {
+  bottom: 100%;
+  border-bottom: 25px solid rgba(19,57,83,0.5);
+}
+.main_content > span::after {
+  top: 100%;
+  border-top: 25px solid rgba(19,57,83,0.5);
+}
+.userexpect{
+	background: url('../images/pro.png') no-repeat 0 center #000;
+	height: 640px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100vw;
+	color: #777;
+	padding-left: 50%;
+}
+.userexpect h1{
+	color: #fff;
+}
+.userexpect p > span{
+	font-weight: bold;
+}
+.userexpect a{
+	text-decoration: none;
+	color: rgba(41,124,179,1);
+	font-weight: 600;
+	transition: all 0.3s linear;
+}
+.userexpect a:hover{
+	color: rgba(41,124,179,0.5);
+}
+.instructor{
+	width: 100%;
+	color: #777;
+	padding: 50px 100px;
+}
+.instructor h1, .instructor h4{
+	color: #000;
+}
+.instructor a{
+	color: rgba(41,124,179,1);
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s linear;
+}
+.instructor a:hover{
+	color: rgba(41,124,179,0.5);
+}
+.instructor > div{
+	display: table-cell;
+	height: 500px;
+	vertical-align: middle;
+	width: 50%;
+}
+.instructor > div:first-child{
+	border-right: 1px solid #777;
+}
+.instructor > div > ul{
+	list-style-type: none;
+}
+.instructor > div > ul li{
+	padding: 20px 0;
+}
+.instructor > div > ul li img{
+	width: 150px;
+	margin-right: 5px !important;
+	border-radius: 5px;
+}
+.instructor > div > ul li img, .instructor > div > ul li p,.instructor > div > ul li h4{
+	float: left;
+	margin: 0;
+}
+.instructor > div > ul li:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.save{
+	background-color: #47ba7d;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+	overflow: hidden;
+}
+.save ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.save ul:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.save ul li.active{
+	opacity: 1;
+	cursor: default;
+}
+.save ul li.active button:hover{
+	color: rgba(255,255,255,0.5);
+}
+.save ul li{
+	display: inline-block;
+	color: #000;
+	width: 300px;
+	margin: 60px;
+	padding: 30px;
+	background-color: #fff;
+	position: relative;
+	overflow-x: hidden;
+	float: left;
+	left: 430px;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+.save ul li > span{
+	position: absolute;
+    top: -25px;
+    left: 130px;
+    border: 20px solid #47ba7d;
+    border-radius: 100%;
+}
+.save ul li p span{
+	color: #da9d9d;
+	text-decoration: line-through;
+}
+.save ul li hr{
+	border-style: dotted;
+    color: #777;
+    margin: 30px 0;
+    transform: translateX(-30px) scaleX(1.5);
+}
+.save ul li button{
+	background-color: #297cb3;
+	color: #fff;
+	font-size: 12px;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s linear;
+}
+.agenda{
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+.agenda ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.agenda ul li button{
+	padding: 10px;
+	background-color: #000;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	opacity: 0.4;
+	outline: none;
+	transition: all 0.5s linear;
+}
+.opacity{
+	opacity: 1 !important;
+}
+.agenda ul li hr{
+	width: 0;
+	height: 140px;
+	border-style: dotted;
+}
+.queries{
+	width: 100%;
+	color: #777;
+	padding: 50px 100px;
+	background: url('../images/pro.png') no-repeat 0 0;
+	background-size: 100% 100%;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+}
+.queries h1{
+	color: #fff;
+}
+.queries h4{
+	color: #999;
+	margin-bottom: 0;
+}
+.queries p{
+	margin-top: 0;
+}
+.queries a{
+	color: rgba(41,124,179,1);
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s linear;
+}
+.queries a:hover{
+	color: rgba(41,124,179,0.5);
+}
+.queries > div{
+	display: table-cell;
+	height: 500px;
+	vertical-align: top;
+	width: 50%;
+	padding: 20px;
+}
+.queries > div:first-child{
+	border-right: 1px solid #777;
+	padding-left: 0;
+}
+.queries > div > ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.footer{
+	background-color: #1d2124;
+	color: #777;
+	padding: 20px 100px;
+}
+.footer:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.footer p{
+	float: left;
+}
+.footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 0;
+	float: right;
+	margin: 16px 0;
+}
+.footer ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+}
+.footer ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 5px;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #777;
+	color: #1d2124;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	transition: all 0.3s linear;
+}
+.footer ul li a:hover{
+	background-color: #1d2124;
+	color: #777;
+	border: 1px solid #777;
+}
